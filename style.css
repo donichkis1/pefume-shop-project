@@ -1,0 +1,148 @@
+@font-face {
+    font-family: montserrat;
+    src: url(https://fonts.google.com/specimen/Montserrat);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+
+
+}
+
+.container {
+    
+    width: 500px;
+    height: 350px;
+    display: flex;
+    border-radius: 10px;
+    background-color: white;;
+
+
+}
+
+.parfum {
+    height: 350px;
+    width: auto;
+    border-radius: 9px 0px 0px 9px;
+}
+
+.parfum-mobile {
+    display: none;
+    height: 196px;
+    width: auto;
+}
+
+.side-card {
+    width: 60%;
+    overflow: hidden;
+    margin: 25px;
+}
+
+.main-label {
+    font-size: 10px;
+    color: hsl(228, 12%, 48%);
+    font-family: Arial, Helvetica, sans-serif'
+    font-weight: 1;
+    letter-spacing: 5px;
+}
+
+.content {
+    color: hsl(228, 12%, 48%);
+    font-family: Arial;
+    font-size: 14px;
+    height: 50px;
+    
+}
+
+.prices {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+
+
+}
+
+.price {
+    font-size: 30px;
+    font-weight: 600;
+    color: hsl(158, 36%, 37%)
+}
+
+.old-price {
+    font-size: 12px;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+    margin-left: 20px;
+    
+}
+
+.button-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 5px;
+    margin: 3px 0
+}
+
+.cart {
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    border: 1px solid hsl(158, 36%, 37%);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.fa-cart-shopping {
+    margin-right: 5px;
+}
+
+.cart:hover {
+    background-color: white;
+    color: hsl(158, 36%, 37%);
+}
+
+@media(max-width:609px) {
+    .parfum {
+        display: none;
+    }
+
+    .parfum-mobile {
+        display: block;
+        border-radius: 12px 12px 0 0;
+    }
+
+    .container {
+        flex-direction: column;
+        height: 500px;
+        width: 280px;
+        align-items: center;
+        justify-content: flex-start;
+        
+        
+    }
+    .button-section {
+        margin: 0 0 17px 0;
+        
+    }
+
+    .side-card {
+        margin: 13px 0;
+        width: 88%;
+    }
+
+    .side-card h2 {
+        margin: 0  0 0;
+    }
+}
